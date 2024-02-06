@@ -2,6 +2,6 @@
 
 <template>
   <main>
-    <h1 class="border text-[33px]">Home view</h1>
+    <h1 class="border fluid-text-8xl text-light dark:text-red">Home view</h1>
   </main>
 </template>

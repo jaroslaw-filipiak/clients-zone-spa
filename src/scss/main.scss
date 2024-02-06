@@ -1,0 +1,47 @@
+// tailwind..
+// @import './../style.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './base/typography';
+
+@import './components/top-bar';
+@import './components/notifications-slider';
+@import './components/side-menu';
+@import './components/mode-switcher';
+@import './components/buttons';
+@import './components/breadcrumbs';
+@import './components/testimonials';
+
+@import './layout/grid';
+@import './layout/footer';
+
+@import './vendors/hamburgers/hamburgers';
+@import './vendors/swiper';
+@import './vendors/scrollbar';
+@import './vendors/accordion';
+@import './utils/debug';
+
+html,
+body {
+  @apply dark:bg-darkMain;
+}
+
+html.lenis {
+  height: auto;
+
+  &.lenis-smooth {
+    scroll-behavior: auto;
+  }
+  &.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  &.lenis-stopped {
+    overflow: hidden;
+  }
+  &.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+}
